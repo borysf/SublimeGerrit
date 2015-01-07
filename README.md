@@ -20,6 +20,10 @@ Clone this repo into Sublime Text's Packages directory. Target directory name **
 More advanced settings can be changed via "Preferences > Package Settings > SublimeGerrit - User". Please also take a look at "Preferences > Package Settings > SublimeGerrit - Default" for all accessible settings.
 
 
+## Usage
+Just press [ctrl]+[alt]+[g] when working on a Git project
+
+
 ## Note
 Previously the project was a closed-source and required license purchase for continued use. Because it was not very popular, I decided to publish it freely. Anyway, I'd like to thank these few great people who decided to support me by purchasing a license! :)
 
