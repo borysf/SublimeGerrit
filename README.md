@@ -21,7 +21,53 @@ More advanced settings can be changed via "Preferences > Package Settings > Subl
 
 
 ## Usage
-Just press [ctrl]+[alt]+[g] when working on a Git project
+
+1. Press [ctrl] + [alt] + [g] or select "Gerrit: Basic Setup" command from Command Palette.
+2. Configure connection settings.
+   When you're done, use [ctrl] + [alt] + [g] or "Gerrit" command from Command Palette to show
+   the list of available commands for current view.
+
+3. All commands that are accessible after pressing [ctrl] + [alt] + [g] are also available
+   in Sublime's Command Palette.
+
+4. You can also use the following keyboard shortcuts to work faster:
+
+      [ctrl] + [alt] + [g] - display available Gerrit commands for current view
+
+  Change view:
+  
+      [d]              - download commands 
+      [ctrl] + [d]     - revert checkout 
+      [p]              - switch Patch Set 
+      [enter]          - review change 
+      [r]              - rebase change 
+      [a]              - abandon change 
+      [alt] + [a]      - restore abandoned change 
+      [u]              - publish draft change 
+      [q]              - delete draft change 
+      [m]              - edit commit message 
+      [t]              - edit topic 
+      [c]              - cherry pick change 
+      [F5]             - refresh view 
+      [f]              - menu of changed files 
+      [ctrl] + [a]     - add reviewer 
+      [ctrl] + [r]     - remove reviewer 
+
+
+  Diff view:
+  
+      [up]             - go to previous change 
+      [down]           - go to next change 
+      [left]           - load previous file 
+      [right]          - load next file 
+      [alt] + [up]     - show previous comment 
+      [alt] + [down]   - show next comment 
+      [i]              - toggle intraline differences 
+      [b]              - menu to change base patch set 
+      [c]              - menu to navigate through comments 
+      [d]              - menu to navigate through draft comments 
+      [f]              - menu to navigate through changed files 
+      [e]              - menu to list changes in file 
 
 
 ## Note
