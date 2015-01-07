@@ -7,8 +7,7 @@ Usage instructions
 ==================
 
 1. Press [ctrl] + [alt] + [g] or select "Gerrit: Basic Setup" command from Command Palette.
-2. Configure connection settings. For more information please read the docs here:
-   http://www.sublimegerrit.com/docs/quick-start.html#basic-setup
+2. Configure connection settings.
 
    When you're done, use [ctrl] + [alt] + [g] or "Gerrit" command from Command Palette to show
    the list of available commands for current view.
@@ -53,30 +52,5 @@ Usage instructions
       [e]              - menu to list changes in file
 
 
-If you want to get the most of Git and Gerrit integration with Sublime Text, you should definitely
-check SublimeGit - the full-featured Git integration - http://sublimegit.net/
-
-
 If you are looking for side-by-side diff and merge tool with Git/Mercurial/SVN support, please
 take a look at Sublimerge - http://www.sublimerge.com/
-
-
-Licensing
-=========
-
-If you like SublimeGerrit, please support development by buying a license. It doesn't cost much! :)
-
-
-Solving most common problems
-============================
-
-Console reports: "ImportError: No module named 'core'"
-
-If you installed SublimeGerrit using Package Control, please make sure that you use its final version.
-Alpha versions does not install SublimeGerrit properly. You can also try Manual Installation.
-
-
-More information
-================
-
-For more information, troubleshooting, customizing settings and more, please visit www.sublimegerrit.com
