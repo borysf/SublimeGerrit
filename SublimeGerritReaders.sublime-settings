@@ -1,0 +1,99 @@
+{
+    "gerritcodereview#change": {
+        "root": "",
+        "mappings": {
+            "_number"                  : "_number",
+            "id"                       : "id",
+            "project"                  : "project",
+            "branch"                   : "branch",
+            "change_id"                : "change_id",
+            "subject"                  : "subject",
+            "topic"                    : "topic",
+            "created"                  : "created",
+            "status"                   : "status",
+            "current_revision"         : "current_revision",
+            "updated"                  : "updated",
+            "mergeable"                : "mergeable",
+            "owner_name"               : "owner.name",
+            "owner_email"              : "owner.email",
+            "owner_username"           : "owner.username",
+            "labels"                   : "labels",
+            "permitted_labels"         : "permitted_labels",
+            "removable_reviewers"      : "removable_reviewers",
+            "messages": {
+                "root": "messages",
+                "mappings": {
+                    "id"             : "id",
+                    "author_name"    : "author.name",
+                    "author_email"   : "author.email",
+                    "author_username": "author.username",
+                    "date"           : "date",
+                    "message"        : "message"
+                }
+            },
+            "revisions": "revisions",
+            "actions": {
+                "root": "actions",
+                "mappings": {
+                    "abandon"   : "abandon",
+                    "topic"     : "topic",
+                    "rebase"    : "rebase",
+                    "cherrypick": "cherrypick",
+                    "restore"   : "restore",
+                    "/"         : "/",
+                    "message"   : "message",
+                    "publish"   : "publish",
+                    "submit"    : "submit"
+                }
+            }
+        }
+    },
+
+    "gerritcodereview#suggestedreviewer": {
+        "root": "",
+        "mappings": {
+            "account_id": "account._account_id",
+            "account_name": "account.name",
+            "email": "account.email",
+            "group_id": "group.id",
+            "group_name": "group.name"
+        }
+    },
+
+    "gerritcodereview#diff": {
+        "root": "",
+        "mappings": {
+            "meta_a": "meta_a",
+            "meta_b": "meta_b",
+            "change_type": "change_type",
+            "intraline_status": "intraline_status",
+            "diff_header": "diff_header",
+            "content": {
+                "root": "content",
+                "mappings": {
+                    "a": "a",
+                    "b": "b",
+                    "ab": "ab",
+                    "edit_a": "edit_a",
+                    "edit_b": "edit_b",
+                    "skip": "skip",
+                    "common": "common"
+                }
+            }
+        }
+    },
+
+    "gerritcodereview#comment": {
+        "root": "",
+        "mappings": {
+            "id": "id",
+            "path": "path",
+            "line": "line",
+            "side": "side",
+            "in_reply_to": "in_reply_to",
+            "range": "range",
+            "message": "message",
+            "updated": "updated"
+        }
+    }
+}

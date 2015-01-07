@@ -1,0 +1,142 @@
+{
+    //Print debugging information to console
+    "debug": false,
+
+    // CONNECTION
+
+    "connection.username": "",
+    "connection.password": "",
+    "connection.timeout": 60,
+
+    // labels icons
+    "icon_approved": "✔",
+    "icon_rejected": "✘",
+
+
+    // CHANGE VIEW
+
+    //Whether to display change comments in reversed order. If `true`, orders comments from newest to oldest.
+    //Note: this DOES NOT affect inline comments in diff view.
+    "change.reverse_comments": false,
+
+
+    // DIFF VIEW
+
+    //Color scope for missing block
+    "diff.block_missing": "comment",
+
+    //Color scope for deleted block
+    "diff.block_deleted": "markup.deleted",
+
+    //Color scope for inserted block
+    "diff.block_inserted": "markup.inserted",
+
+    //Color scope for intraline changes
+    "diff.block_intraline": "markup.changed",
+
+    //How to draw diff blocks. Set to `false` to draw vertical lines instead of outlines.
+    "diff.block_draw_outlined": true,
+
+    //How to draw intraline changes. Set to `true` to draw outlined regions instead of filled.
+    "diff.block_intraline_draw_outlined": false,
+
+    //Color scope for inactive comment gutter icon
+    "diff.comment_icon_inactive": "comment",
+
+    //Color scope for active comment gutter icon
+    "diff.comment_icon_active": "keyword",
+
+    //Syntaxes to be used when could not automatically resolve the correct one.
+    "diff.fallback_syntaxes": {
+        ".xul": "Packages/XML/XML.tmLanguage"
+    },
+
+    //Toggle the side bar when entering/leaving diff view
+    "diff.toggle_side_bar": false,
+
+    // NOTIFICATIONS
+
+    //How often (in seconds) should SublimeGerrit check for open changes
+    "notifications.check_interval": 300,
+
+    //Maximum number of changes that are returned from Gerrit while checking for open changes
+    "notifications.check_limit": 50,
+
+    //The query to be used to check for open changes
+    "notifications.check_query": "status:open AND -is:draft",
+
+
+    // GIT
+
+    //Path to Git executable
+    "git.executable_path": "",
+
+    //Default arguments to be passed to Git commands.
+    "git.default_args": "-c color.ui=false",
+
+    //The protocol to be used for Quick Checkout command. Protocol names are equivalent to the
+    //ones displayed on Change Screen on your Gerrit site
+    "git.quick_checkout_default_protocol": "ssh",
+
+
+    // OTHER
+
+    //Sublime Text's settings to be applied to a change view.
+    "change_view": {
+        "draw_centered": false,
+        "draw_white_space": "none"
+    },
+
+    //Sublime Text's settings to be applied to a diff views.
+    "diff_view": {
+    },
+
+    //List of predefined quick replies you can use to reply to inline comment
+    "comment_quick_replies": [
+        "Done"
+    ],
+
+    //Main command - the one after running Gerrit. Possible commands are: menu, dashboard, search
+    "main_command": {
+        "command": "menu",
+        "args": {}
+    },
+
+    //When main_command is "menu", then this configuration tells what entries are present there
+    "main_menu_entries": [
+        {
+            "description": "Changes: Open",
+            "command": "dashboard",
+            "args": {
+                "query": "status:open AND -is:draft",
+                "limit": 50
+            }
+        }, {
+            "description": "Changes: Merged",
+            "command": "dashboard",
+            "args": {
+                "query": "status:merged AND -is:draft",
+                "limit": 50
+            }
+        }, {
+            "description": "Changes: Abandoned",
+            "command": "dashboard",
+            "args": {
+                "query": "status:abandoned AND -is:draft",
+                "limit": 50
+            }
+        },
+        {
+            "description": "Drafts: Open",
+            "command": "dashboard",
+            "args": {
+                "query": "status:open AND is:draft",
+                "limit": 50
+            }
+        }, {
+            "description": "Search...",
+            "command": "search",
+            "args": {}
+        }
+    ]
+}

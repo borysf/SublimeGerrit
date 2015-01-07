@@ -1,0 +1,141 @@
+[
+  {
+    "command": "sublime_gerrit_main",
+    "caption": "Gerrit"
+  },
+  {
+    "command": "sublime_gerrit_setup",
+    "caption": "Gerrit: Basic Setup"
+  },
+  {
+    "command": "sublime_gerrit_push",
+    "caption": "Gerrit: Push to Review"
+  },
+  {
+    "command": "sublime_gerrit_push",
+    "caption": "Gerrit: Push to Drafts",
+    "args": {
+        "drafts": true
+    }
+  },
+
+  //Diff menu
+  {
+    "command": "sublime_gerrit_diff_next_file",
+    "caption": "Gerrit: Next File",
+    "args": {
+      "direction": 1
+    }
+  },
+  {
+    "command": "sublime_gerrit_diff_next_file",
+    "caption": "Gerrit: Previous File",
+    "args": {
+      "direction": -1
+    }
+  },
+  {
+    "command": "sublime_gerrit_diff_next_change",
+    "caption": "Gerrit: Next Change",
+    "args": {
+      "direction": 1
+    }
+  },
+  {
+    "command": "sublime_gerrit_diff_next_change",
+    "caption": "Gerrit: Previous Change",
+    "args": {
+      "direction": -1
+    }
+  },
+  {
+    "command": "sublime_gerrit_diff_toggle_intralines",
+    "caption": "Gerrit: Toggle Intralines"
+  },
+  {
+    "command": "sublime_gerrit_diff_base_change_menu",
+    "caption": "Gerrit: Base Patch Set"
+  },
+  {
+    "command": "sublime_gerrit_diff_comments_menu",
+    "caption": "Gerrit: Show Comments"
+  },
+  {
+    "command": "sublime_gerrit_diff_drafts_menu",
+    "caption": "Gerrit: Show Draft Comments"
+  },
+  {
+    "command": "sublime_gerrit_diff_files_menu",
+    "caption": "Gerrit: Switch File"
+  },
+  {
+    "command": "sublime_gerrit_diff_explore_changes",
+    "caption": "Gerrit: Explore Changes"
+  },
+
+  //Change menu
+  {
+    "command": "sublime_gerrit_download_menu",
+    "caption": "Gerrit: Download Change"
+  },
+  {
+    "command": "sublime_gerrit_switch_patch_set",
+    "caption": "Gerrit: Switch Patch Set"
+  },
+  {
+    "command": "sublime_gerrit_review_change",
+    "caption": "Gerrit: Review Change"
+  },
+  {
+    "command": "sublime_gerrit_revert_checkout",
+    "caption": "Gerrit: Revert Checkout"
+  },
+  {
+    "command": "sublime_gerrit_rebase_change",
+    "caption": "Gerrit: Rebase Change"
+  },
+  {
+    "command": "sublime_gerrit_abandon_change",
+    "caption": "Gerrit: Abandon Change"
+  },
+  {
+    "command": "sublime_gerrit_publish_draft",
+    "caption": "Gerrit: Publish Draft"
+  },
+  {
+    "command": "sublime_gerrit_delete_draft",
+    "caption": "Gerrit: Delete Draft"
+  },
+  {
+    "command": "sublime_gerrit_restore_change",
+    "caption": "Gerrit: Restore Change"
+  },
+  {
+    "command": "sublime_gerrit_edit_commit_message",
+    "caption": "Gerrit: Edit Commit Message"
+  },
+  {
+    "command": "sublime_gerrit_cherry_pick_change",
+    "caption": "Gerrit: Cherry Pick To..."
+  },
+  {
+    "command": "sublime_gerrit_refresh_change",
+    "caption": "Gerrit: Refresh"
+  },
+  {
+    "command": "sublime_gerrit_edit_topic",
+    "caption": "Gerrit: Edit Topic"
+  },
+  {
+    "command": "sublime_gerrit_changed_files_menu",
+    "caption": "Gerrit: View Changed Files"
+  },
+  {
+    "command": "sublime_gerrit_add_reviewer",
+    "caption": "Gerrit: Add Reviewer"
+  },
+  {
+    "command": "sublime_gerrit_remove_reviewer",
+    "caption": "Gerrit: Remove Reviewer"
+  }
+]

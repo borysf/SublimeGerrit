@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>name</key>
+    <string>SublimeGerritConsole</string>
+    <key>scopeName</key>
+    <string>text.sublimegerrit.console</string>
+    <key>uuid</key>
+    <string>f24e252a-20a0-48dd-8dcb-543d613bd688</string>
+    <key>fileTypes</key>
+    <array>
+        <string>sublimegerrit</string>
+    </array>
+    <key>patterns</key>
+    <array>
+        <dict>
+            <key>match</key>
+            <string>^(runcmd:\s)(.*)$</string>
+            <key>captures</key>
+            <dict>
+                <key>0</key>
+                <dict>
+                    <key>name</key>
+                    <string>constant.other</string>
+                </dict>
+            </dict>
+        </dict>
+
+        <dict>
+            <key>match</key>
+            <string>^(stdout:\s)(.*)$</string>
+            <key>captures</key>
+            <dict>
+                <key>1</key>
+                <dict>
+                    <key>name</key>
+                    <string>markup.inserted</string>
+                </dict>
+            </dict>
+        </dict>
+
+        <dict>
+            <key>match</key>
+            <string>^(stderr:\s)(.*)$</string>
+            <key>captures</key>
+            <dict>
+                <key>1</key>
+                <dict>
+                    <key>name</key>
+                    <string>markup.deleted</string>
+                </dict>
+            </dict>
+        </dict>
+
+        <dict>
+            <key>match</key>
+            <string>^(status:\s)(.*)$</string>
+            <key>captures</key>
+            <dict>
+                <key>0</key>
+                <dict>
+                    <key>name</key>
+                    <string>comment</string>
+                </dict>
+            </dict>
+        </dict>
+    </array>
+</dict>
+</plist>

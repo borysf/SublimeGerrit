@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>name</key>
+    <string>SublimeGerrit</string>
+    <key>scopeName</key>
+    <string>text.sublimegerrit</string>
+    <key>uuid</key>
+    <string>14e46e59-80d7-4aa7-967b-020939db8730</string>
+    <key>fileTypes</key>
+    <array>
+        <string>sublimegerrit</string>
+    </array>
+    <key>patterns</key>
+    <array>
+        <dict>
+        <key>match</key>
+        <string>^Loading\.\.\.$</string>
+        <key>captures</key>
+        <dict>
+            <key>0</key>
+            <dict>
+                <key>name</key>
+                <string>text</string>
+            </dict>
+        </dict>
+      </dict>
+
+        <dict>
+        <key>match</key>
+        <string>^NOTICE: .*$</string>
+        <key>captures</key>
+        <dict>
+            <key>0</key>
+            <dict>
+                <key>name</key>
+                <string>markup.deleted</string>
+            </dict>
+        </dict>
+      </dict>
+      <dict>
+        <key>match</key>
+        <string>^Commit Message|Summary|Comments|Depends On|Patch Sets$</string>
+        <key>captures</key>
+        <dict>
+            <key>0</key>
+            <dict>
+                <key>name</key>
+                <string>constant.other</string>
+            </dict>
+        </dict>
+      </dict>
+
+      <dict>
+        <key>match</key>
+        <string>^> [^:]+ (@ \d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2})$</string>
+        <key>captures</key>
+        <dict>
+            <key>0</key>
+            <dict>
+                <key>name</key>
+                <string>string.other</string>
+            </dict>
+            <key>1</key>
+            <dict>
+                <key>name</key>
+                <string>support.class</string>
+            </dict>
+        </dict>
+      </dict>
+
+      <dict>
+        <key>match</key>
+        <string>^Reviewer .*$</string>
+        <key>captures</key>
+        <dict>
+            <key>0</key>
+            <dict>
+                <key>name</key>
+                <string>string.other</string>
+            </dict>
+        </dict>
+      </dict>
+
+      <dict>
+        <key>match</key>
+        <string>^(> Patch Set \d+)\s+(\[.*\])$</string>
+        <key>captures</key>
+        <dict>
+            <key>0</key>
+            <dict>
+                <key>name</key>
+                <string>string.other</string>
+            </dict>
+            <key>2</key>
+            <dict>
+                <key>name</key>
+                <string>comment.other</string>
+            </dict>
+        </dict>
+      </dict>
+
+      <dict>
+        <key>match</key>
+        <string>^(Status:\s+)((NEW)|(MERGED|SUBMITTED, Merge Pending)|(ABANDONED)|(.*))$</string>
+        <key>captures</key>
+        <dict>
+            <key>1</key>
+            <dict>
+                <key>name</key>
+                <string>string.other</string>
+            </dict>
+            <key>3</key>
+            <dict>
+                <key>name</key>
+                <string>markup.inserted.other</string>
+            </dict>
+            <key>4</key>
+            <dict>
+                <key>name</key>
+                <string>support.type.other</string>
+            </dict>
+            <key>5</key>
+            <dict>
+                <key>name</key>
+                <string>markup.deleted.other</string>
+            </dict>
+        </dict>
+      </dict>
+
+      <dict>
+        <key>match</key>
+        <string>^([^:]+:  ).*$</string>
+        <key>captures</key>
+        <dict>
+            <key>0</key>
+            <dict>
+                <key>name</key>
+                <string>comment.other</string>
+            </dict>
+            <key>1</key>
+            <dict>
+                <key>name</key>
+                <string>string.other</string>
+            </dict>
+        </dict>
+      </dict>
+
+      <dict>
+        <key>match</key>
+        <string>\s{2}((\-\d+)|(\+\d+))\s{2}</string>
+        <key>captures</key>
+        <dict>
+            <key>2</key>
+            <dict>
+                <key>name</key>
+                <string>markup.deleted.other</string>
+            </dict>
+
+            <key>3</key>
+            <dict>
+                <key>name</key>
+                <string>markup.inserted.other</string>
+            </dict>
+        </dict>
+      </dict>
+
+
+      <dict>
+        <key>match</key>
+        <string>^  ((A)|(R)|(C)|(W)|(M)|(D))(.*?)( -> (.*))?(\+\d+), (-\d+)\s+(\(.*\))?$</string>
+        <key>captures</key>
+        <dict>
+            <key>0</key>
+            <dict>
+                <key>name</key>
+                <string>comment.other</string>
+            </dict>
+            <key>2</key> <!-- A -->
+            <dict>
+                <key>name</key>
+                <string>markup.inserted.other</string>
+            </dict>
+            <key>3</key> <!-- R -->
+            <dict>
+                <key>name</key>
+                <string>comment.other</string>
+            </dict>
+            <key>4</key> <!-- C -->
+            <dict>
+                <key>name</key>
+                <string>comment.other</string>
+            </dict>
+            <key>5</key> <!-- W -->
+            <dict>
+                <key>name</key>
+                <string>comment.other</string>
+            </dict>
+            <key>6</key> <!-- M -->
+            <dict>
+                <key>name</key>
+                <string>support.type</string>
+            </dict>
+            <key>7</key> <!-- D -->
+            <dict>
+                <key>name</key>
+                <string>markup.deleted.other</string>
+            </dict>
+            <key>8</key> <!-- filename -->
+            <dict>
+                <key>name</key>
+                <string>support.type.other</string>
+            </dict>
+            <key>9</key> <!-- -> -->
+            <dict>
+                <key>name</key>
+                <string>comment.other</string>
+            </dict>
+            <key>10</key> <!-- filename -->
+            <dict>
+                <key>name</key>
+                <string>support.type.other</string>
+            </dict>
+            <key>11</key> <!-- + -->
+            <dict>
+                <key>name</key>
+                <string>markup.inserted.other</string>
+            </dict>
+            <key>12</key> <!-- - -->
+            <dict>
+                <key>name</key>
+                <string>markup.deleted.other</string>
+            </dict>
+        </dict>
+      </dict>
+
+      <dict>
+        <key>match</key>
+        <string>.</string>
+        <key>captures</key>
+        <dict>
+          <key>0</key>
+          <dict>
+            <key>name</key>
+            <string>comment.other.sublimegerrit</string>
+          </dict>
+        </dict>
+      </dict>
+    </array>
+</dict>
+</plist>

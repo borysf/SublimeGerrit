@@ -1,0 +1,72 @@
+{
+    "dashboard_item": [
+        "[${status}] ${subject} @ ${project}:${branch} by ${owner_name}",
+        "owner: ${owner_name}, project: ${project}, branch: ${branch}",
+        "created: ${created}, updated: ${updated}"
+    ],
+
+    "change_label": [
+        "${label}: ${score}"
+    ],
+
+    "change_title": "*GERRIT* ${subject}",
+
+    "change_commit_message": [
+        "Commit Message",
+        "${commit.message}"
+    ],
+
+    "change_summary": [
+        "",
+        "Summary",
+        "Change-Id:  ${change_id}",
+        "Owner:      ${owner_name}",
+        "Project:    ${project}",
+        "Branch:     ${branch}",
+        "Created:    ${created}",
+        "Updated:    ${updated}",
+        "Status:     ${status}",
+        "Strategy:   ${submit_type}",
+        "Topic:      ${topic}",
+        ""
+    ],
+
+    "change_depends_header": [
+        "",
+        "Depends On"
+    ],
+
+    "change_depends_item": [
+        "> ${subject}   [${commit}]"
+    ],
+
+    "change_patch_sets_header": [
+        "",
+        "",
+        "Patch Sets"
+    ],
+
+    "change_patch_set_header": "> Patch Set ${_number}   [${revision}]",
+
+    "change_patch_set_commit": [
+        "  Author:     ${commit.author.name} <${commit.author.email}> @ ${commit.author.date}",
+        "  Committer:  ${commit.committer.name} <${commit.committer.email}> @ ${commit.committer.date}",
+        ""
+    ],
+
+    "change_patch_set_file": [
+        "  ${status}  ${filename}    ${lines_total}    ${draft_comments}"
+    ],
+
+    "change_comments_header": [
+        "",
+        "",
+        "Comments",
+    ],
+
+    "change_comment_message": [
+        "> ${author_name} @ ${date}",
+        "${message}",
+        ""
+    ]
+}
