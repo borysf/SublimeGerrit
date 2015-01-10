@@ -6,6 +6,13 @@ The full-featured Gerrit Code Review integration for **Sublime Text 3 (will not 
 ### via Git clone
 Clone this repo into Sublime Text's Packages directory. Target directory name **must** be SublimeGerrit.
 
+### via Package Control
+1. Open Command Palette
+2. Select "Package Control: Install Package"
+3. Select "SublimeGerrit"
+4. Restart Sublime Text
+5. Configure SublimeGerrit, see below.
+
 
 ## Setup
 1. Open Command Palette
