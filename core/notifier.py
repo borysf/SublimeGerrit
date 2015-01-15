@@ -32,7 +32,7 @@ class Notifier():
     @classmethod
     def message(self, size):
         if size > 0:
-            return 'Gerrit: %d open changes%s' % (size)
+            return 'Gerrit: %d open changes' % (size)
         else:
             return 'Gerrit: no changes open'
 

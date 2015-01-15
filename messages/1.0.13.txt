@@ -1,0 +1,26 @@
+SublimeGerrit has just been upgraded!
+
+It is highly recommended to restart Sublime Text before first use.
+------------------------------------------------------------------
+
+The plugin is now open-source and no longer require license for continued use. I decided to
+make it free and open because of insignificant user's interest.
+
+Anyway, I'd like to thank these few users who decided to support me and purchased a license!
+You're great! :)
+
+You can view source code and contribute here: http://github.com/borysf/SublimeGerrit
+
+
+
+What's new?
+===========
+
+Fixed a bug in notifier that caused status bar messages not to appear.
+
+
+Ad ;)
+=====
+
+If you are looking for side-by-side diff and merge tool with Git/Mercurial/SVN support, please
+take a look at Sublimerge - http://www.sublimerge.com/
