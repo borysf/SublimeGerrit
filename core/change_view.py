@@ -689,7 +689,7 @@ class ChangeView(BaseView):
     def has_action(self, action):
         current_rev = self.get_current_rev()
 
-        if 'actions' in current_rev and action in current_rev['actions'] and current_rev['actions'][action]['enabled']:
+        if 'actions' in current_rev and action in current_rev['actions'] and 'enabled' in current_rev['actions'][action] and current_rev['actions'][action]['enabled']:
             return current_rev['actions'][action]
 
         if (
